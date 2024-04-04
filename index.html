@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Css</title>
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mx-auto px-4">
+      <nav class="relative flex justify-between items-center py-4">
+        <div class="logo">
+          <img
+            src="./public/image/tailwindcss-logotype.svg"
+            class="w-52"
+            alt=""
+          />
+        </div>
+
+        <ul class="hidden md:flex items-center space-x-6">
+          <li
+            class="text-lg text-slate-900 hover:text-blue-400 cursor-pointer transition-colors duration-300"
+          >
+            Portflio
+          </li>
+          <li
+            class="text-lg text-slate-900 hover:text-blue-400 cursor-pointer transition-colors duration-300"
+          >
+            About
+          </li>
+          <li
+            class="text-lg text-slate-900 hover:text-blue-400 cursor-pointer transition-colors duration-300"
+          >
+            Contact
+          </li>
+          <li
+            class="text-lg text-slate-900 hover:text-blue-400 cursor-pointer transition-colors duration-300"
+          >
+            Social
+          </li>
+          <a
+            class="text-lg text-white bg-blue-400 px-3 py-1 rounded-full hover:bg-slate-900 transition-colors duration-300"
+            href=""
+            >Call Me</a
+          >
+        </ul>
+
+        <button class="toggle-btn md:hidden">
+          <i class="ri-menu-line text-3xl"></i>
+        </button>
+
+        <ul
+          class="toggle-menu flex hidden flex-col justify-center absolute top-16 bg-slate-100 drop-shadow-lg w-full text-center p-5 space-y-2 md:hidden"
+        >
+          <li
+            class="text-xl text-slate-900 hover:text-blue-400 cursor-pointer transition-colors duration-300"
+          >
+            Portflio
+          </li>
+          <li
+            class="text-xl text-slate-900 hover:text-blue-400 cursor-pointer transition-colors duration-300"
+          >
+            About
+          </li>
+          <li
+            class="text-xl text-slate-900 hover:text-blue-400 cursor-pointer transition-colors duration-300"
+          >
+            Contact
+          </li>
+          <li
+            class="text-xl text-slate-900 hover:text-blue-400 cursor-pointer transition-colors duration-300"
+          >
+            Social
+          </li>
+          <a
+            class="text-xl text-white bg-blue-400 px-3 py-1 rounded-full hover:bg-slate-900 transition-colors duration-300"
+            href=""
+            >Call Me</a
+          >
+        </ul>
+      </nav>
+
+      <section class="hero pt-32">
+        <div
+          class="flex items-center justify-between flex-col-reverse md:flex-row gap-6"
+        >
+          <div class="left text-slate-900 text-center md:text-left">
+            <h1 class="text-3xl font-bold md:text-5xl">
+              Rapidly build modern websites without ever leaving your HTML.
+            </h1>
+            <p class="my-10">
+              A utility-first CSS framework packed with classes like flex, pt-4,
+              text-center and rotate-90 that can be composed to build any
+              design, directly in your markup.
+            </p>
+            <a
+              class="text-xl text-white bg-blue-400 px-3 py-1 rounded-xl hover:bg-slate-900 transition-colors duration-300"
+              href="https://tailwindcss.com/"
+              target="_blank"
+              >Get Started</a
+            >
+          </div>
+          <div class="right">
+            <img
+              src="./public/image/undraw_learning_sketching_nd4f.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="author my-32">
+        <div class="text-center mb-20">
+          <h1 class="text-4xl font-bold">
+            “Best practices” don’t actually work.
+          </h1>
+          <p class="max-w-5xl mt-6 mx-auto">
+            I’ve written a few thousand words on why traditional “semantic class
+            names” are the reason CSS is hard to maintain, but the truth is
+            you’re never going to believe me until you actually try it. If you
+            can suppress the urge to retch long enough to give it a chance, I
+            really think you’ll wonder how you ever worked with CSS any other
+            way.
+          </p>
+        </div>
+
+        <div
+          class="cards mt-10 flex flex-col justify-between items-center gap-12 text-center md:flex-row md:gap-5"
+        >
+          <div
+            class="flex flex-col rounded-xl bg-slate-200 p-5 border border-slate-300 shadow-lg"
+          >
+            <img
+              src="public/image/avatar-1.jpg"
+              alt=""
+              class="w-16 rounded-full -mt-12 mx-auto mb-5"
+            />
+            <h5 class="font-bold mb-5 text-xl">Adam Wathan</h5>
+            <p>
+              Thanks Steve will give it a read. Although I am a mega
+              @tailwindcss fan. Have been working with CSS for over ten years
+              and Tailwind just makes my life easier
+            </p>
+          </div>
+          <div
+            class="flex flex-col rounded-xl bg-slate-200 p-5 border border-slate-300 shadow-lg"
+          >
+            <img
+              src="public/image/avatar-2.jpg"
+              alt=""
+              class="w-16 rounded-full -mt-12 mx-auto mb-5"
+            />
+            <h5 class="font-bold mb-5 text-xl">Adam Wathan</h5>
+            <p>
+              Thanks Steve will give it a read. Although I am a mega
+              @tailwindcss fan. Have been working with CSS for over ten years
+              and Tailwind just makes my life easier
+            </p>
+          </div>
+          <div
+            class="flex flex-col rounded-xl bg-slate-200 p-5 border border-slate-300 shadow-lg"
+          >
+            <img
+              src="public/image/avatar-3.jpg"
+              alt=""
+              class="w-16 rounded-full -mt-12 mx-auto mb-5"
+            />
+            <h5 class="font-bold mb-5 text-xl">Adam Wathan</h5>
+            <p>
+              Thanks Steve will give it a read. Although I am a mega
+              @tailwindcss fan. Have been working with CSS for over ten years
+              and Tailwind just makes my life easier
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="call-action bg-blue-400 text-white p-10">
+      <div class="container mx-auto flex justify-between items-center gap-5">
+        <h1 class="text-2xl md:text-4xl">Move even faster with Tailwind UI.</h1>
+        <a
+          class="text-xl text-white bg-slate-900 w-40 p-2 md:px-3 md:py-2 text-center rounded-full hover:bg-slate-700 transition-colors duration-300"
+          href="https://tailwindcss.com/"
+          target="_blank"
+          >Start Here</a
+        >
+      </div>
+    </div>
+
+    <footer class="bg-slate-900 text-white px-5 py-10">
+      <div
+        class="container mx-auto flex justify-between flex-col-reverse text-center md:flex-row md:text-left"
+      >
+        <div class="flex flex-col gap-10">
+          <h5>Copyright &copy; 2024, All Right Reserved</h5>
+          <img
+            src="public/image/tailwindcss-logotype-white.svg"
+            class="w-52 mx-auto md:mx-0"
+            alt="logo"
+          />
+          <div>
+            <i class="ri-facebook-box-fill text-3xl"></i>
+            <i class="ri-instagram-fill text-3xl"></i>
+            <i class="ri-youtube-fill text-3xl"></i>
+            <i class="ri-twitter-x-fill text-3xl"></i>
+            <i class="ri-linkedin-box-fill text-3xl"></i>
+          </div>
+        </div>
+        <div class="flex gap-12 justify-center py-10 md:py-0">
+          <ul>
+            <li
+              class="mb-3 hover:text-slate-300 transition-colors duration-300 cursor-pointer"
+            >
+              Home
+            </li>
+            <li
+              class="mb-3 hover:text-slate-300 transition-colors duration-300 cursor-pointer"
+            >
+              About
+            </li>
+            <li
+              class="hover:text-slate-300 transition-colors duration-300 cursor-pointer"
+            >
+              Contact
+            </li>
+          </ul>
+          <ul>
+            <li
+              class="mb-3 hover:text-slate-300 transition-colors duration-300 cursor-pointer"
+            >
+              Imprint
+            </li>
+            <li
+              class="mb-3 hover:text-slate-300 transition-colors duration-300 cursor-pointer"
+            >
+              Privacy
+            </li>
+            <li
+              class="hover:text-slate-300 transition-colors duration-300 cursor-pointer"
+            >
+              Credits
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-10 md:gap-20">
+          <div>
+            <input
+              type="text"
+              placeholder="Subscribe to Newsletter"
+              class="py-3 px-3 rounded-full border-none focus:outline-blue-400"
+            />
+            <button
+              class="bg-blue-400 py-3 px-5 rounded-full hover:bg-blue-800 transition-colors duration-300"
+            >
+              Go
+            </button>
+          </div>
+          <h5>Copyright &copy; 2024, All Right Reserved</h5>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle-btn");
+      const toggleMenu = document.querySelector(".toggle-menu");
+
+      toggleBtn.addEventListener("click", () => {
+        toggleMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
